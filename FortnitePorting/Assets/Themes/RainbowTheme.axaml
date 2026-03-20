@@ -4,11 +4,7 @@
     <controls:FPStyles.Resources>
 
         <!-- Separators -->
-        <Brush x:Key="FPSeparatorColorLayer1">#212123</Brush>
-        <Brush x:Key="FPSeparatorColorLayer2">#313133</Brush>
-
-        <!-- Button backgrounds: rainbow but still defined as proper brush keys -->
-        <LinearGradientBrush x:Key="FPButtonBackground" StartPoint="0%,0%" EndPoint="100%,0%">
+        <LinearGradientBrush x:Key="FPSeparatorColorLayer1" StartPoint="0%,0%" EndPoint="100%,0%">
             <GradientStops>
                 <GradientStop Color="#FF4D4D" Offset="0.00"/>
                 <GradientStop Color="#FF9A3D" Offset="0.16"/>
@@ -20,7 +16,7 @@
             </GradientStops>
         </LinearGradientBrush>
 
-        <LinearGradientBrush x:Key="FPButtonBackgroundPointerOver" StartPoint="0%,0%" EndPoint="100%,0%">
+        <LinearGradientBrush x:Key="FPSeparatorColorLayer2" StartPoint="0%,0%" EndPoint="100%,0%">
             <GradientStops>
                 <GradientStop Color="#E04444" Offset="0.00"/>
                 <GradientStop Color="#E08234" Offset="0.16"/>
@@ -32,70 +28,8 @@
             </GradientStops>
         </LinearGradientBrush>
 
-        <LinearGradientBrush x:Key="FPButtonBackgroundPressed" StartPoint="0%,0%" EndPoint="100%,0%">
-            <GradientStops>
-                <GradientStop Color="#B53636" Offset="0.00"/>
-                <GradientStop Color="#B56729" Offset="0.16"/>
-                <GradientStop Color="#B59F31" Offset="0.32"/>
-                <GradientStop Color="#38994D" Offset="0.48"/>
-                <GradientStop Color="#2A8CB5" Offset="0.64"/>
-                <GradientStop Color="#3A49B5" Offset="0.80"/>
-                <GradientStop Color="#842FB5" Offset="1.00"/>
-            </GradientStops>
-        </LinearGradientBrush>
-
-        <!-- Border -->
-        <LinearGradientBrush x:Key="FPButtonBorderBrush" StartPoint="0%,0%" EndPoint="100%,0%">
-            <GradientStops>
-                <GradientStop Color="#FFF2F2" Offset="0.00"/>
-                <GradientStop Color="#FFE7D6" Offset="0.16"/>
-                <GradientStop Color="#FFF8C7" Offset="0.32"/>
-                <GradientStop Color="#D8FFE1" Offset="0.48"/>
-                <GradientStop Color="#D8F5FF" Offset="0.64"/>
-                <GradientStop Color="#E1E5FF" Offset="0.80"/>
-                <GradientStop Color="#F1D8FF" Offset="1.00"/>
-            </GradientStops>
-        </LinearGradientBrush>
-
-        <!-- Layer 2 -->
-        <LinearGradientBrush x:Key="FPLayer2" StartPoint="0%,0%" EndPoint="100%,0%">
-            <GradientStops>
-                <GradientStop Color="#2E2024" Offset="0.00"/>
-                <GradientStop Color="#2F261F" Offset="0.16"/>
-                <GradientStop Color="#302D1F" Offset="0.32"/>
-                <GradientStop Color="#203021" Offset="0.48"/>
-                <GradientStop Color="#1F2A30" Offset="0.64"/>
-                <GradientStop Color="#22233A" Offset="0.80"/>
-                <GradientStop Color="#2D2035" Offset="1.00"/>
-            </GradientStops>
-        </LinearGradientBrush>
-
-        <LinearGradientBrush x:Key="FPLayer2PointerOver" StartPoint="0%,0%" EndPoint="100%,0%">
-            <GradientStops>
-                <GradientStop Color="#3A272C" Offset="0.00"/>
-                <GradientStop Color="#3B2E25" Offset="0.16"/>
-                <GradientStop Color="#3D3825" Offset="0.32"/>
-                <GradientStop Color="#274028" Offset="0.48"/>
-                <GradientStop Color="#253742" Offset="0.64"/>
-                <GradientStop Color="#2A2C49" Offset="0.80"/>
-                <GradientStop Color="#382843" Offset="1.00"/>
-            </GradientStops>
-        </LinearGradientBrush>
-
-        <LinearGradientBrush x:Key="FPLayer2Pressed" StartPoint="0%,0%" EndPoint="100%,0%">
-            <GradientStops>
-                <GradientStop Color="#261A1E" Offset="0.00"/>
-                <GradientStop Color="#271E18" Offset="0.16"/>
-                <GradientStop Color="#282417" Offset="0.32"/>
-                <GradientStop Color="#1A281B" Offset="0.48"/>
-                <GradientStop Color="#182328" Offset="0.64"/>
-                <GradientStop Color="#1B1C31" Offset="0.80"/>
-                <GradientStop Color="#241A2D" Offset="1.00"/>
-            </GradientStops>
-        </LinearGradientBrush>
-
-        <!-- Selected buttons -->
-        <LinearGradientBrush x:Key="FPButtonBackgroundSelected" StartPoint="0%,0%" EndPoint="100%,0%">
+        <!-- Buttons -->
+        <LinearGradientBrush x:Key="FPButtonBackground" StartPoint="0%,0%" EndPoint="100%,0%">
             <GradientStops>
                 <GradientStop Color="#FF5A5A" Offset="0.00"/>
                 <GradientStop Color="#FFA347" Offset="0.16"/>
@@ -107,114 +41,232 @@
             </GradientStops>
         </LinearGradientBrush>
 
+        <LinearGradientBrush x:Key="FPButtonBackgroundPointerOver" StartPoint="0%,0%" EndPoint="100%,0%">
+            <GradientStops>
+                <GradientStop Color="#FF7A7A" Offset="0.00"/>
+                <GradientStop Color="#FFB868" Offset="0.16"/>
+                <GradientStop Color="#FFF07A" Offset="0.32"/>
+                <GradientStop Color="#7CFF99" Offset="0.48"/>
+                <GradientStop Color="#68E1FF" Offset="0.64"/>
+                <GradientStop Color="#8894FF" Offset="0.80"/>
+                <GradientStop Color="#DB7AFF" Offset="1.00"/>
+            </GradientStops>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="FPButtonBackgroundPressed" StartPoint="0%,0%" EndPoint="100%,0%">
+            <GradientStops>
+                <GradientStop Color="#D94A4A" Offset="0.00"/>
+                <GradientStop Color="#D98939" Offset="0.16"/>
+                <GradientStop Color="#D9C447" Offset="0.32"/>
+                <GradientStop Color="#4FCC69" Offset="0.48"/>
+                <GradientStop Color="#39B7D9" Offset="0.64"/>
+                <GradientStop Color="#5564D9" Offset="0.80"/>
+                <GradientStop Color="#AE4AD9" Offset="1.00"/>
+            </GradientStops>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="FPButtonBorderBrush" StartPoint="0%,0%" EndPoint="100%,0%">
+            <GradientStops>
+                <GradientStop Color="#000000" Offset="0.00"/>
+                <GradientStop Color="#111111" Offset="1.00"/>
+            </GradientStops>
+        </LinearGradientBrush>
+
+        <!-- Layers -->
+        <LinearGradientBrush x:Key="FPLayer2" StartPoint="0%,0%" EndPoint="100%,0%">
+            <GradientStops>
+                <GradientStop Color="#FF6666" Offset="0.00"/>
+                <GradientStop Color="#FFB266" Offset="0.16"/>
+                <GradientStop Color="#FFF266" Offset="0.32"/>
+                <GradientStop Color="#66FF8C" Offset="0.48"/>
+                <GradientStop Color="#66E7FF" Offset="0.64"/>
+                <GradientStop Color="#7A88FF" Offset="0.80"/>
+                <GradientStop Color="#D666FF" Offset="1.00"/>
+            </GradientStops>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="FPLayer2PointerOver" StartPoint="0%,0%" EndPoint="100%,0%">
+            <GradientStops>
+                <GradientStop Color="#FF8080" Offset="0.00"/>
+                <GradientStop Color="#FFC27A" Offset="0.16"/>
+                <GradientStop Color="#FFF580" Offset="0.32"/>
+                <GradientStop Color="#80FFA4" Offset="0.48"/>
+                <GradientStop Color="#80ECFF" Offset="0.64"/>
+                <GradientStop Color="#98A3FF" Offset="0.80"/>
+                <GradientStop Color="#E180FF" Offset="1.00"/>
+            </GradientStops>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="FPLayer2Pressed" StartPoint="0%,0%" EndPoint="100%,0%">
+            <GradientStops>
+                <GradientStop Color="#E05555" Offset="0.00"/>
+                <GradientStop Color="#E09A4D" Offset="0.16"/>
+                <GradientStop Color="#E0D54D" Offset="0.32"/>
+                <GradientStop Color="#58E076" Offset="0.48"/>
+                <GradientStop Color="#4DCBE0" Offset="0.64"/>
+                <GradientStop Color="#6674E0" Offset="0.80"/>
+                <GradientStop Color="#BD55E0" Offset="1.00"/>
+            </GradientStops>
+        </LinearGradientBrush>
+
+        <!-- Selected buttons -->
+        <LinearGradientBrush x:Key="FPButtonBackgroundSelected" StartPoint="0%,0%" EndPoint="100%,0%">
+            <GradientStops>
+                <GradientStop Color="#FF7070" Offset="0.00"/>
+                <GradientStop Color="#FFBC5E" Offset="0.16"/>
+                <GradientStop Color="#FFF570" Offset="0.32"/>
+                <GradientStop Color="#73FF91" Offset="0.48"/>
+                <GradientStop Color="#5EE5FF" Offset="0.64"/>
+                <GradientStop Color="#7B89FF" Offset="0.80"/>
+                <GradientStop Color="#D870FF" Offset="1.00"/>
+            </GradientStops>
+        </LinearGradientBrush>
+
         <LinearGradientBrush x:Key="FPButtonBackgroundSelectedPointerOver" StartPoint="0%,0%" EndPoint="100%,0%">
             <GradientStops>
-                <GradientStop Color="#E84E4E" Offset="0.00"/>
-                <GradientStop Color="#E8913E" Offset="0.16"/>
-                <GradientStop Color="#E8D24D" Offset="0.32"/>
-                <GradientStop Color="#55D96F" Offset="0.48"/>
-                <GradientStop Color="#3FC0E8" Offset="0.64"/>
-                <GradientStop Color="#5967E8" Offset="0.80"/>
-                <GradientStop Color="#B14DE8" Offset="1.00"/>
+                <GradientStop Color="#FF8C8C" Offset="0.00"/>
+                <GradientStop Color="#FFCA7A" Offset="0.16"/>
+                <GradientStop Color="#FFF98C" Offset="0.32"/>
+                <GradientStop Color="#8CFFAA" Offset="0.48"/>
+                <GradientStop Color="#7AEAFF" Offset="0.64"/>
+                <GradientStop Color="#94A0FF" Offset="0.80"/>
+                <GradientStop Color="#E58CFF" Offset="1.00"/>
             </GradientStops>
         </LinearGradientBrush>
 
         <!-- Bright buttons -->
         <LinearGradientBrush x:Key="FPButtonBackgroundBright" StartPoint="0%,0%" EndPoint="100%,0%">
             <GradientStops>
-                <GradientStop Color="#FF6B6B" Offset="0.00"/>
-                <GradientStop Color="#FFB25A" Offset="0.16"/>
-                <GradientStop Color="#FFF06D" Offset="0.32"/>
-                <GradientStop Color="#74FF94" Offset="0.48"/>
-                <GradientStop Color="#63E0FF" Offset="0.64"/>
-                <GradientStop Color="#7A88FF" Offset="0.80"/>
-                <GradientStop Color="#D86BFF" Offset="1.00"/>
+                <GradientStop Color="#FF8585" Offset="0.00"/>
+                <GradientStop Color="#FFC96E" Offset="0.16"/>
+                <GradientStop Color="#FFF985" Offset="0.32"/>
+                <GradientStop Color="#91FFAE" Offset="0.48"/>
+                <GradientStop Color="#7BEFFF" Offset="0.64"/>
+                <GradientStop Color="#96A3FF" Offset="0.80"/>
+                <GradientStop Color="#E985FF" Offset="1.00"/>
             </GradientStops>
         </LinearGradientBrush>
 
         <LinearGradientBrush x:Key="FPButtonBackgroundBrightPointerOver" StartPoint="0%,0%" EndPoint="100%,0%">
             <GradientStops>
-                <GradientStop Color="#F05E5E" Offset="0.00"/>
-                <GradientStop Color="#F0A24E" Offset="0.16"/>
-                <GradientStop Color="#F0E061" Offset="0.32"/>
-                <GradientStop Color="#66E684" Offset="0.48"/>
-                <GradientStop Color="#55CDEB" Offset="0.64"/>
-                <GradientStop Color="#6976EB" Offset="0.80"/>
-                <GradientStop Color="#C35EEB" Offset="1.00"/>
+                <GradientStop Color="#FFA0A0" Offset="0.00"/>
+                <GradientStop Color="#FFD58A" Offset="0.16"/>
+                <GradientStop Color="#FFFDA0" Offset="0.32"/>
+                <GradientStop Color="#A4FFBE" Offset="0.48"/>
+                <GradientStop Color="#98F3FF" Offset="0.64"/>
+                <GradientStop Color="#AAB5FF" Offset="0.80"/>
+                <GradientStop Color="#EFA0FF" Offset="1.00"/>
             </GradientStops>
         </LinearGradientBrush>
 
         <!-- Cards -->
         <LinearGradientBrush x:Key="FPContentCardBackground" StartPoint="0%,0%" EndPoint="100%,100%">
             <GradientStops>
-                <GradientStop Color="#1A1A1F" Offset="0.00"/>
-                <GradientStop Color="#24192A" Offset="0.20"/>
-                <GradientStop Color="#1A2130" Offset="0.40"/>
-                <GradientStop Color="#182A22" Offset="0.60"/>
-                <GradientStop Color="#2A2418" Offset="0.80"/>
-                <GradientStop Color="#17171B" Offset="1.00"/>
+                <GradientStop Color="#FF6B6B" Offset="0.00"/>
+                <GradientStop Color="#FFB84D" Offset="0.16"/>
+                <GradientStop Color="#FFF76B" Offset="0.32"/>
+                <GradientStop Color="#76FF94" Offset="0.48"/>
+                <GradientStop Color="#6BEBFF" Offset="0.64"/>
+                <GradientStop Color="#7F8DFF" Offset="0.80"/>
+                <GradientStop Color="#DD6BFF" Offset="1.00"/>
             </GradientStops>
         </LinearGradientBrush>
 
         <LinearGradientBrush x:Key="FPPopupContentCardBackground" StartPoint="0%,0%" EndPoint="100%,100%">
             <GradientStops>
-                <GradientStop Color="#1A1A1F" Offset="0.00"/>
-                <GradientStop Color="#24192A" Offset="0.20"/>
-                <GradientStop Color="#1A2130" Offset="0.40"/>
-                <GradientStop Color="#182A22" Offset="0.60"/>
-                <GradientStop Color="#2A2418" Offset="0.80"/>
-                <GradientStop Color="#17171B" Offset="1.00"/>
+                <GradientStop Color="#FF6B6B" Offset="0.00"/>
+                <GradientStop Color="#FFB84D" Offset="0.16"/>
+                <GradientStop Color="#FFF76B" Offset="0.32"/>
+                <GradientStop Color="#76FF94" Offset="0.48"/>
+                <GradientStop Color="#6BEBFF" Offset="0.64"/>
+                <GradientStop Color="#7F8DFF" Offset="0.80"/>
+                <GradientStop Color="#DD6BFF" Offset="1.00"/>
             </GradientStops>
         </LinearGradientBrush>
 
         <LinearGradientBrush x:Key="FPContentCardBackgroundBright" StartPoint="0%,0%" EndPoint="100%,100%">
             <GradientStops>
-                <GradientStop Color="#3A2933" Offset="0.00"/>
-                <GradientStop Color="#3B3025" Offset="0.25"/>
-                <GradientStop Color="#253B37" Offset="0.50"/>
-                <GradientStop Color="#252E3B" Offset="0.75"/>
-                <GradientStop Color="#35253B" Offset="1.00"/>
+                <GradientStop Color="#FF9090" Offset="0.00"/>
+                <GradientStop Color="#FFD07A" Offset="0.16"/>
+                <GradientStop Color="#FFF990" Offset="0.32"/>
+                <GradientStop Color="#98FFB1" Offset="0.48"/>
+                <GradientStop Color="#90F1FF" Offset="0.64"/>
+                <GradientStop Color="#A0AAFF" Offset="0.80"/>
+                <GradientStop Color="#E790FF" Offset="1.00"/>
             </GradientStops>
         </LinearGradientBrush>
 
         <!-- Text -->
-        <SolidColorBrush x:Key="TextFillPrimaryBrush" Color="#FFFFFF" />
-        <SolidColorBrush x:Key="TextFillPrimaryDisabledBrush" Color="#80FFFFFF" />
+        <SolidColorBrush x:Key="TextFillPrimaryBrush" Color="#000000" />
+        <SolidColorBrush x:Key="TextFillPrimaryDisabledBrush" Color="#66000000" />
 
-        <SolidColorBrush x:Key="TextFillSecondaryBrush" Color="#F0F0F0" />
-        <SolidColorBrush x:Key="TextFillSecondaryDisabledBrush" Color="#80F0F0F0" />
+        <SolidColorBrush x:Key="TextFillSecondaryBrush" Color="#111111" />
+        <SolidColorBrush x:Key="TextFillSecondaryDisabledBrush" Color="#66111111" />
 
-        <SolidColorBrush x:Key="TextFillTertiaryBrush" Color="#D0D0D0" />
-        <SolidColorBrush x:Key="TextFillTertiaryDisabledBrush" Color="#80D0D0D0" />
+        <SolidColorBrush x:Key="TextFillTertiaryBrush" Color="#222222" />
+        <SolidColorBrush x:Key="TextFillTertiaryDisabledBrush" Color="#66222222" />
 
-        <!-- Explicit icon/text support -->
-        <SolidColorBrush x:Key="FPButtonForegroundBrush" Color="#FFFFFF" />
-        <SolidColorBrush x:Key="FPIconBrush" Color="#FFFFFF" />
-        <SolidColorBrush x:Key="FPTitleTextBrush" Color="#FFFFFF" />
+        <!-- Foreground / icons -->
+        <SolidColorBrush x:Key="FPButtonForegroundBrush" Color="#000000" />
+        <SolidColorBrush x:Key="FPIconBrush" Color="#000000" />
+        <SolidColorBrush x:Key="FPTitleTextBrush" Color="#000000" />
 
-        <!-- Window / panel backgrounds -->
+        <!-- Window / borders -->
         <LinearGradientBrush x:Key="WindowBackgroundBrush" StartPoint="0%,0%" EndPoint="100%,100%">
             <GradientStops>
-                <GradientStop Color="#120F14" Offset="0.00"/>
-                <GradientStop Color="#16111C" Offset="0.20"/>
-                <GradientStop Color="#101826" Offset="0.40"/>
-                <GradientStop Color="#0F1B18" Offset="0.60"/>
-                <GradientStop Color="#1C180F" Offset="0.80"/>
-                <GradientStop Color="#100F12" Offset="1.00"/>
+                <GradientStop Color="#FF7A7A" Offset="0.00"/>
+                <GradientStop Color="#FFC46B" Offset="0.16"/>
+                <GradientStop Color="#FFF97A" Offset="0.32"/>
+                <GradientStop Color="#85FFA3" Offset="0.48"/>
+                <GradientStop Color="#7AEFFF" Offset="0.64"/>
+                <GradientStop Color="#8C99FF" Offset="0.80"/>
+                <GradientStop Color="#E37AFF" Offset="1.00"/>
             </GradientStops>
         </LinearGradientBrush>
 
-        <SolidColorBrush x:Key="ContentBorderBackgroundBrush" Color="#0B0B0D" />
-        <SolidColorBrush x:Key="ContentBorderBorderBrush" Color="#2C2C34" />
+        <LinearGradientBrush x:Key="ContentBorderBackgroundBrush" StartPoint="0%,0%" EndPoint="100%,100%">
+            <GradientStops>
+                <GradientStop Color="#FF6666" Offset="0.00"/>
+                <GradientStop Color="#FFB05E" Offset="0.16"/>
+                <GradientStop Color="#FFF266" Offset="0.32"/>
+                <GradientStop Color="#6EFF8E" Offset="0.48"/>
+                <GradientStop Color="#66E6FF" Offset="0.64"/>
+                <GradientStop Color="#7A88FF" Offset="0.80"/>
+                <GradientStop Color="#D666FF" Offset="1.00"/>
+            </GradientStops>
+        </LinearGradientBrush>
 
-        <SolidColorBrush x:Key="ContentBorderLayer2BackgroundBrush" Color="#111216" />
-        <SolidColorBrush x:Key="ContentBorderLayer2BorderBrush" Color="#1C1D22" />
+        <LinearGradientBrush x:Key="ContentBorderBorderBrush" StartPoint="0%,0%" EndPoint="100%,0%">
+            <GradientStops>
+                <GradientStop Color="#000000" Offset="0.00"/>
+                <GradientStop Color="#222222" Offset="1.00"/>
+            </GradientStops>
+        </LinearGradientBrush>
 
-        <SolidColorBrush x:Key="DialogOverlayBackgroundBrush" Color="#80000000" />
-        <SolidColorBrush x:Key="BroadcastOverlayBackgroundBrush" Color="#80000000" />
+        <LinearGradientBrush x:Key="ContentBorderLayer2BackgroundBrush" StartPoint="0%,0%" EndPoint="100%,100%">
+            <GradientStops>
+                <GradientStop Color="#FF8585" Offset="0.00"/>
+                <GradientStop Color="#FFCA73" Offset="0.16"/>
+                <GradientStop Color="#FFF985" Offset="0.32"/>
+                <GradientStop Color="#90FFAF" Offset="0.48"/>
+                <GradientStop Color="#85F1FF" Offset="0.64"/>
+                <GradientStop Color="#97A1FF" Offset="0.80"/>
+                <GradientStop Color="#E985FF" Offset="1.00"/>
+            </GradientStops>
+        </LinearGradientBrush>
+
+        <LinearGradientBrush x:Key="ContentBorderLayer2BorderBrush" StartPoint="0%,0%" EndPoint="100%,0%">
+            <GradientStops>
+                <GradientStop Color="#111111" Offset="0.00"/>
+                <GradientStop Color="#333333" Offset="1.00"/>
+            </GradientStops>
+        </LinearGradientBrush>
+
+        <SolidColorBrush x:Key="DialogOverlayBackgroundBrush" Color="#55000000" />
+        <SolidColorBrush x:Key="BroadcastOverlayBackgroundBrush" Color="#55000000" />
 
         <!-- Accent -->
-        <Color x:Key="FPAccentColor">#C14DFF</Color>
+        <Color x:Key="FPAccentColor">#000000</Color>
         <SolidColorBrush x:Key="FPAccentBrush" Color="{DynamicResource FPAccentColor}" />
 
         <Bitmap x:Key="FPLogoBitmap">avares://FortnitePorting/Assets/LogoRebrandRainbow.png</Bitmap>
