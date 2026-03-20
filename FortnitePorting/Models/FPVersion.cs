@@ -16,7 +16,7 @@ public class FPVersion : IComparable<FPVersion>, IParsable<FPVersion>
     public FPVersion(string inVersion)
     {
         if (inVersion[0] == 'v') inVersion = inVersion[1..];
-        if (inVersion.StartsWith("ERROR")) inVersion = inVersion.Substring("ERROR");
+        if (inVersion.StartsWith("ERROR")) inVersion = inVersion.Substring(5);
         
         var dashSplit = inVersion.Split("-");
         if (dashSplit.Length > 1) Identifier = dashSplit[1];
