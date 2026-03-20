@@ -41,13 +41,13 @@
             </GradientStops>
         </LinearGradientBrush>
         
-        <SolidColorBrush x:Key="TextFillPrimaryBrush" Color="#f2e9ea" />
+        <SolidColorBrush x:Key="TextFillPrimaryBrush" Color="#7d7d7d" />
         <SolidColorBrush x:Key="TextFillPrimaryDisabledBrush" Color="#80f2e9ea" />
 
-        <SolidColorBrush x:Key="TextFillSecondaryBrush" Color="#c9b1b5" />
+        <SolidColorBrush x:Key="TextFillSecondaryBrush" Color="#8f0011" />
         <SolidColorBrush x:Key="TextFillSecondaryDisabledBrush" Color="#80c9b1b5" />
 
-        <SolidColorBrush x:Key="TextFillTertiaryBrush" Color="#8C6B71" />
+        <SolidColorBrush x:Key="TextFillTertiaryBrush" Color="#943b4b" />
         <SolidColorBrush x:Key="TextFillTertiaryDisabledBrush" Color="#808C6B71" />
         
         <SolidColorBrush x:Key="WindowBackgroundBrush" Color="#12090B" />
@@ -60,8 +60,8 @@
         <SolidColorBrush x:Key="DialogOverlayBackgroundBrush" Color="#80000000" />
         <SolidColorBrush x:Key="BroadcastOverlayBackgroundBrush" Color="#80000000" />
         
-        <SolidColorBrush x:Key="FPTitleTextBrush" Color="#f2e9ea" />
-        <Color x:Key="FPAccentColor">#DC143C</Color>
+        <SolidColorBrush x:Key="FPTitleTextBrush" Color="#808C6B71" />
+        <Color x:Key="FPAccentColor">#8f0011</Color>
         <SolidColorBrush x:Key="FPAccentBrush" Color="{DynamicResource FPAccentColor}" />
         
         <Bitmap x:Key="FPLogoBitmap">avares://FortnitePorting/Assets/LogoRebrandCrimson.png</Bitmap>

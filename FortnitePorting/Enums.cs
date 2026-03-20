@@ -337,4 +337,8 @@ public enum EThemeType
     [Description("Crimson Red")]
     [Icon(MaterialIconKind.CircleOpacity)]
     CrimsonRed,
+
+    [Description("Rainbow")]
+    [Icon(MaterialIconKind.CircleOpacity)]
+    Rainbow,
 }
